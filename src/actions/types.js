@@ -1,0 +1,1 @@
+export const SELECT_COLOR_ONE = 'SELECT_COLOR_ONE';

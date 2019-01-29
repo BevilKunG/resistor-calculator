@@ -1,9 +1,10 @@
 import React from 'react';
+import SelectorOne from './SelectorOne';
 
 const App = () => {
   return (
     <div>
-      App Component
+      <SelectorOne/>
     </div>
   );
 }
