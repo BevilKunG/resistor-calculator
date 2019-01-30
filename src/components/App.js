@@ -1,9 +1,12 @@
 import React from 'react';
+import ColorSelector from './ColorSelector';
+import Resistance from './Resistance';
 
 const App = () => {
   return (
-    <div>
-      App Component
+    <div className="ui container">
+      <Resistance/>
+      <ColorSelector/>
     </div>
   );
 }

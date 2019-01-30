@@ -1,0 +1,13 @@
+.ui.centered.grid>.copper.row{
+  background:#b87333;
+  color: white;
+}
+
+.ui.centered.grid>.silver.row{
+  background:#C0C0C0;
+  color: white;
+}
+
+.ui.centered.grid>.selected.row{
+  border:4px white solid;
+}
