@@ -19,9 +19,13 @@ const Resistance = (props) => {
   const two = number[props.colorTwo];
   const mul = number[props.colorThree];
   const result = ((one*10)+two)*(10**mul);
+  let point=0;
+  if(mul<0){
+     point = mul===-1?1:2;
+  }
   return (
     <div>
-      {`R = ${result}`}
+      {`R = ${result.toFixed(point)} Ω`}
     </div>
   )
 }
