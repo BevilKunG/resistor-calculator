@@ -9,14 +9,13 @@ class SelectorTwo extends Component {
 
   renderColorList(){
     const colors = ['black','brown','red','orange','yellow','olive','blue','violet','grey'];
-
-    return colors.map(color => <div onClick={() => this.onColorClick(color)}>{color}</div>)
+    const selectedColor = this.props.colorTwo;
+    return colors.map((color,index) => <div key={color} className={`${color} ${color===selectedColor?'selected':''} row`} onClick={() => this.onColorClick(color)}>{index}</div>)
   }
 
   render(){
-    console.log(this.props.colorTwo);
     return(
-      <div>
+      <div className="ui centered grid">
         {this.renderColorList()}
       </div>
     );

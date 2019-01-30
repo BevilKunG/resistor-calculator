@@ -1,14 +1,12 @@
 import React from 'react';
-import SelectorOne from './SelectorOne';
-import SelectorTwo from './SelectorTwo';
-import SelectorThree from './SelectorThree';
+import ColorSelector from './ColorSelector';
+import Resistance from './Resistance';
 
 const App = () => {
   return (
-    <div>
-      <SelectorOne/>
-      <SelectorTwo/>
-      <SelectorThree/>
+    <div className="ui container">
+      <Resistance/>
+      <ColorSelector/>
     </div>
   );
 }

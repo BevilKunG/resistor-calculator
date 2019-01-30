@@ -8,15 +8,15 @@ class SelectorThree extends Component {
   }
 
   renderColorList(){
-    const colors = ['black','brown','red','orange','yellow','olive','blue','violet','grey'];
+    const colors = ['black','brown','red','orange','yellow','olive','blue','copper','silver'];
+    const selectedColor = this.props.colorThree;
 
-    return colors.map(color => <div onClick={() => this.onColorClick(color)}>{color}</div>)
+    return colors.map(color => <div key={color} className={`${color} ${color===selectedColor?'selected':''} row`} onClick={() => this.onColorClick(color)}>{color}</div>)
   }
 
   render(){
-    console.log(this.props.colorThree);
     return(
-      <div>
+      <div className="ui centered grid">
         {this.renderColorList()}
       </div>
     );
