@@ -51,8 +51,12 @@ const Resistance = (props) => {
 
   return (
     <div className="ui grid">
-      <div className="centered row">{`R = ${R.toFixed(point)} ${k>0?'K':''}${m>0?'M':''}Ω ${tol!==0?`±${tol}%`:''}`}</div>
-      {tol!==0&&R>0?<div className="centered row">{`${lowerBound} - ${upperBound}`}</div>:null}
+      <div className="centered row">
+        <div className="ui huge header">{`R = ${R.toFixed(point)} ${k>0?'K':''}${m>0?'M':''}Ω ${tol!==0?`±${tol}%`:''}`}</div>
+      </div>
+      <div className="centered row">
+        <div className="ui medium violet header">{tol!==0&&R>0?<div className="centered row">{`${lowerBound} Ω - ${upperBound} Ω`}</div>:null}</div>
+      </div>
     </div>
   )
 }
