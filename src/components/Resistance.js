@@ -20,15 +20,30 @@ const Resistance = (props) => {
   const two = number[props.colorTwo];
   const mul = number[props.colorThree];
   const result = ((one*10)+two)*(10**mul);
+  let R = result;
+  let k=0,m=0;
   let point=0;
-  if(mul<0){
-     point = mul===-1?1:2;
+  if(result>=1000){
+    R = result / (result>=1000000?1000000:1000);
+    result>=1000000?m++:k++;
+  }else if(result > 0){
+    if((mul===2||mul===5)&&two>0){
+      point= one>0?1:0;
+    }else if(mul<0){
+       point = mul===-1?1:2;
+    }
   }
+
+
   return (
-    <div>
-      {`R = ${result.toFixed(point)} Ω`}
+    <div className="ui grid">
+      <div className="centered row">{`R = ${R.toFixed(point)} ${k>0?'K':''}${m>0?'M':''}Ω`}</div>
     </div>
   )
 }
 
-export default connect(state=>state)(Resistance);
+const mapStateToProps = ({ colorOne, colorTwo, colorThree }) => {
+  return { colorOne, colorTwo, colorThree };
+}
+
+export default connect(mapStateToProps)(Resistance);
