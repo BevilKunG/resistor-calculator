@@ -1,0 +1,12 @@
+.body.column{
+  background: #ffcd94;
+}
+
+.ui.nine.column.grid>.column{
+  height: 180px;
+}
+
+.four.wide.grey.column{
+  height:10px;
+  margin-top: 80px;
+}
