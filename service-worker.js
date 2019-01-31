@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/resistor-calculator/precache-manifest.eb7f8027418b18fdf4d0f24df1864ad0.js"
+  "/resistor-calculator/precache-manifest.13a5060109ffa47ad06567074afd9e6e.js"
 );
 
 workbox.clientsClaim();
