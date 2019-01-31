@@ -1,6 +1,7 @@
 import { SELECT_COLOR_ONE } from './types';
 import { SELECT_COLOR_TWO } from './types';
 import { SELECT_COLOR_THREE } from './types';
+import { SELECT_COLOR_FOUR } from './types';
 
 export const selectColorOne = (color) => {
   return {
@@ -19,6 +20,13 @@ export const selectColorTwo = (color) => {
 export const selectColorThree = (color) => {
   return {
     type: SELECT_COLOR_THREE,
+    payload:color
+  }
+}
+
+export const selectColorFour = (color) => {
+  return {
+    type: SELECT_COLOR_FOUR,
     payload:color
   }
 }
