@@ -32,6 +32,8 @@ const Resistance = (props) => {
   const mul = number[props.colorThree];
   const tol = tolPersent[props.colorFour];
   const result = ((one*10)+two)*(10**mul);
+  const lowerBound = result - (result * (tol/100));
+  const upperBound = result + (result * (tol/100));
   let R = result;
   let k=0,m=0;
   let point=0;
@@ -50,6 +52,7 @@ const Resistance = (props) => {
   return (
     <div className="ui grid">
       <div className="centered row">{`R = ${R.toFixed(point)} ${k>0?'K':''}${m>0?'M':''}Ω ${tol!==0?`±${tol}%`:''}`}</div>
+      {tol!==0&&R>0?<div className="centered row">{`${lowerBound} - ${upperBound}`}</div>:null}
     </div>
   )
 }
