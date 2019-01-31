@@ -2,6 +2,7 @@ import React from 'react';
 import SelectorOne from './SelectorOne';
 import SelectorTwo from './SelectorTwo';
 import SelectorThree from './SelectorThree';
+import SelectorFour from './SelectorFour';
 import './ColorSelector.css';
 
 const ColorSelector = () => {
@@ -10,6 +11,7 @@ const ColorSelector = () => {
       <div className="four wide column"><SelectorOne/></div>
       <div className="four wide column"><SelectorTwo/></div>
       <div className="four wide column"><SelectorThree/></div>
+      <div className="four wide column"><SelectorFour/></div>
     </div>
   );
 }
