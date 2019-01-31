@@ -8,6 +8,10 @@
   color: white;
 }
 
+.ui.centered.grid>.white.selected.row,.ui.centered.grid>.copper.selected.row,.ui.centered.grid>.silver.selected.row,.ui.centered.grid>.grey.selected.row{
+  border:4px black solid;
+}
+
 .ui.centered.grid>.selected.row{
   border:4px white solid;
 }

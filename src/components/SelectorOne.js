@@ -8,7 +8,7 @@ class SelectorOne extends Component {
   }
 
   renderColorList(){
-    const colors = ['black','brown','red','orange','yellow','olive','blue','violet','grey'];
+    const colors = ['black','brown','red','orange','yellow','olive','blue','violet','grey','white'];
     const selectedColor = this.props.colorOne;
 
     return colors.map((color,index) => <div key={color} className={`${color} ${color===selectedColor?'selected':''} row`} onClick={() => this.onColorClick(color)}>{index}</div>)

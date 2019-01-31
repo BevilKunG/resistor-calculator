@@ -12,6 +12,7 @@ const Resistance = (props) => {
                   blue: 6,
                   violet:7,
                   grey:8,
+                  white:9,
                   copper:-1,
                   silver: -2
                 }
