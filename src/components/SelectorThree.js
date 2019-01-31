@@ -9,9 +9,10 @@ class SelectorThree extends Component {
 
   renderColorList(){
     const colors = ['black','brown','red','orange','yellow','olive','blue','violet','copper','silver'];
+    const units = ['1','10','100','1K','10K','100K','1M','10M','0.1','0.01']
     const selectedColor = this.props.colorThree;
 
-    return colors.map(color => <div key={color} className={`${color} ${color===selectedColor?'selected':''} row`} onClick={() => this.onColorClick(color)}>{color}</div>)
+    return colors.map((color,index) => <div key={color} className={`${color} ${color===selectedColor?'selected':''} row`} onClick={() => this.onColorClick(color)}>{units[index]}</div>)
   }
 
   render(){
