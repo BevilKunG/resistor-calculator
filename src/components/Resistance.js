@@ -40,10 +40,12 @@ const Resistance = (props) => {
   if(result>=1000){
     R = result / (result>=1000000?1000000:1000);
     result>=1000000?m++:k++;
-  }else if(result > 0){
+  }
+  if(R > 0){
     if((mul===2||mul===5)&&two>0){
-      point= one>0?1:0;
-    }else if(mul<0){
+      point= one!==0?1:0;
+    }
+    if(mul<0){
        point = mul===-1?1:2;
     }
   }
