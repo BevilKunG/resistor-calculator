@@ -4,7 +4,7 @@ import './Resistor.css';
 
 const Resistor = (props) => {
   return (
-    <div className="ui grid container space">
+    <div className="ui computer only grid container space">
       <div className="four wide grey column"></div>
       <div className="eight wide column">
         <div className="ui nine column grid">
