@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/resistor-calculator/static/css/main.d21b5b08.chunk.css"
   },
   {
-    "revision": "900eed50af94b2db40145ff76fd3b81c",
+    "revision": "f38835b64ccec2d4ba98e8ce3fd62031",
     "url": "/resistor-calculator/index.html"
   }
 ];
