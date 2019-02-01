@@ -8,7 +8,7 @@ const Resistor = (props) => {
       <div className="four wide grey column"></div>
       <div className="eight wide column">
         <div className="ui nine column grid">
-          <div className="two wide body column"></div>
+          <div className="two wide body column left"></div>
 
           <div className={`one wide ${props.colorOne} column`}></div>
 
@@ -24,7 +24,7 @@ const Resistor = (props) => {
 
           <div className={`one wide ${props.colorFour} column`}></div>
 
-          <div className="two wide body column"></div>
+          <div className="two wide body column right"></div>
         </div>
       </div>
       <div className="four wide grey column"></div>
