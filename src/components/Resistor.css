@@ -22,3 +22,11 @@
 .ui.grid.container.space{
   margin-top: 1%;
 }
+
+.two.wide.body.column.left{
+  border-radius: 15px 0 0 15px;
+}
+
+.two.wide.body.column.right{
+  border-radius: 0 15px 15px 0;
+}
