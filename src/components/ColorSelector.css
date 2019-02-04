@@ -8,10 +8,14 @@
   color: white;
 }
 
+/* Fix using box-shadow */
+
 .ui.centered.grid>.white.selected.row,.ui.centered.grid>.copper.selected.row,.ui.centered.grid>.silver.selected.row,.ui.centered.grid>.grey.selected.row{
-  border:4px black solid;
+  /* border:4px black solid; */
+  box-shadow:inset 0px 0px 0px 4px black;
 }
 
 .ui.centered.grid>.selected.row{
-  border:4px white solid;
+  /* border:4px white solid; */
+  box-shadow:inset 0px 0px 0px 4px
 }
