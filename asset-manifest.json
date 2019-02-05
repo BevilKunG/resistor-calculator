@@ -1,13 +1,13 @@
 {
-  "main.css": "/resistor-calculator/static/css/main.271345cb.chunk.css",
-  "main.js": "/resistor-calculator/static/js/main.c9258f66.chunk.js",
-  "main.js.map": "/resistor-calculator/static/js/main.c9258f66.chunk.js.map",
+  "main.css": "/resistor-calculator/static/css/main.4e3f90df.chunk.css",
+  "main.js": "/resistor-calculator/static/js/main.c4a1f35c.chunk.js",
+  "main.js.map": "/resistor-calculator/static/js/main.c4a1f35c.chunk.js.map",
   "static/js/1.927d96e5.chunk.js": "/resistor-calculator/static/js/1.927d96e5.chunk.js",
   "static/js/1.927d96e5.chunk.js.map": "/resistor-calculator/static/js/1.927d96e5.chunk.js.map",
   "runtime~main.js": "/resistor-calculator/static/js/runtime~main.c397073d.js",
   "runtime~main.js.map": "/resistor-calculator/static/js/runtime~main.c397073d.js.map",
-  "static/css/main.271345cb.chunk.css.map": "/resistor-calculator/static/css/main.271345cb.chunk.css.map",
+  "static/css/main.4e3f90df.chunk.css.map": "/resistor-calculator/static/css/main.4e3f90df.chunk.css.map",
   "index.html": "/resistor-calculator/index.html",
-  "precache-manifest.18b592a84be4156cc1e76c9b71479afa.js": "/resistor-calculator/precache-manifest.18b592a84be4156cc1e76c9b71479afa.js",
+  "precache-manifest.06c12e3a063561c287244ef364628f30.js": "/resistor-calculator/precache-manifest.06c12e3a063561c287244ef364628f30.js",
   "service-worker.js": "/resistor-calculator/service-worker.js"
 }
